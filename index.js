@@ -27,8 +27,8 @@ client.login({
 });
 
 // backup login if it does fail 
-setTimeout(() => {
+setInterval(() => {
   client.login({
     clientId: "836934112744701982",
   });
-}, 120000);
+}, 600000);

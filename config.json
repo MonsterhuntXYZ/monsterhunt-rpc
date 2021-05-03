@@ -1,0 +1,16 @@
+{
+  "state": "An RPG game on Discord",
+  "largeImageKey": "monsterhunt",
+  "largeImageText": "Monsterhunt",
+  "buttons": [
+    {
+      "label": "Wiki",
+      "url": "https://wiki.monsterhunt.xyz"
+    },
+    {
+      "label": "Invite Bot",
+      "url": "https://www.monsterhunt.xyz/invite"
+    }
+  ],
+  "clientId": "836934112744701982"
+}

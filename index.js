@@ -1,21 +1,13 @@
 const rpc = require("discord-rpc");
 const client = new rpc.Client({ transport: "ipc" });
+const config = require("./config.json"); 
 
 client.on("ready", () => {
   client.setActivity({
-    state: "An RPG game on Discord",
-    largeImageKey: "monsterhunt",
-    largeImageText: "Monsterhunt",
-    buttons: [
-      {
-        label: "Wiki",
-        url: "https://wiki.monsterhunt.xyz",
-      },
-      {
-        label: "Invite Bot",
-        url: "https://www.monsterhunt.xyz/invite",
-      },
-    ],
+    state: config.state,
+    largeImageKey: config.largeImageKey,
+    largeImageText: config.largeImageText,
+    buttons: config.buttons,
   });
 
   console.log("Presence is ready");
@@ -23,12 +15,12 @@ client.on("ready", () => {
 
 // initial login, may fail when discord first starts 
 client.login({
-  clientId: "836934112744701982",
+  clientId: config.clientId,
 });
 
 // backup login if it does fail 
 setInterval(() => {
   client.login({
-    clientId: "836934112744701982",
+    clientId: config.clientId,
   });
 }, 600000);

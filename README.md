@@ -68,6 +68,8 @@ Run the following command
 <br>
 This will download the repository. Now run the following commands
 <br>
+<code>npm install</code>
+<br>
 <code>pm2 start index.js --name monsterhunt-rpc</code>
 <br>
 <code>pm2 save</code>

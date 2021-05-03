@@ -9,7 +9,7 @@ client.on("ready", () => {
     buttons: [
       {
         label: "Wiki",
-        url: "https://wiki.monsterhunt.xyz/en/home",
+        url: "https://wiki.monsterhunt.xyz",
       },
       {
         label: "Invite Bot",

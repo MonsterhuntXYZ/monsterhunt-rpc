@@ -57,7 +57,8 @@ Now you need to install pm2 startup
 
 </p>
 
-<h2>Cloning the repository<h2>
+
+<h2>Getting the presence ready</h2>
 
 <p>
 Run the following command 
@@ -66,16 +67,14 @@ Run the following command
 <code>git clone https://github.com/MonsterhuntXYZ/monsterhunt-rpc .</code>
 <br>
 This will download the repository. Now run the following commands
-
-<ul>
-  <li>pm2 start index.js --name monsterhunt-rpc</li>
-  <li>pm2 save</li>
-</ul>
+<br>
+<code>pm2 start index.js --name monsterhunt-rpc</code>
+<br>
+<code>pm2 save</code>
 
 If you find that your status has stopped or not working, run:
 <br>
 <code>pm2 restart 0</code>
 <br>
 It will attempt to reconnect every 10 minutes.
-
 </p>

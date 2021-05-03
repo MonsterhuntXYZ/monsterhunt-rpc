@@ -68,8 +68,8 @@ Run the following command
 This will download the repository. Now run the following commands
 
 <ul>
-  <li><code>pm2 start index.js --name monsterhunt-rpc<code></li>
-  <li><code>pm2 save<code></li>
+  <li>pm2 start index.js --name monsterhunt-rpc</li>
+  <li>pm2 save</li>
 </ul>
 
 If you find that your status has stopped or not working, run:
